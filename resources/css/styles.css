@@ -117,7 +117,25 @@ h3{
 .section-features{
     margin: 60px auto;
 } 
-   
+   /* -------SECTION-Meals----------- */
+
+.section-meals{
+    width: 100%;
+    list-style: none;
+}   
+.section-meals li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal{
+    width: 100%;
+    margin: 0;
+}
+.meal img{
+    width: 100%;
+    height: auto;
+}
 /* *********  HEADER COMPONENTS ******************** */
 header{
     background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),  url(img/hero.jpg);
