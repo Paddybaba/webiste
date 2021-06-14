@@ -151,6 +151,7 @@ input[type="submit"]:active {
   width: 100%;
   list-style: none;
   margin-bottom: 50px;
+ 
 }
 .section-meals li {
   display: block;
@@ -261,6 +262,7 @@ input[type="submit"]:active {
   color: whitesmoke;
   background-attachment: fixed;
   font-style: italic;
+  padding-bottom: 50px;
 }
 .section-testimonial h2 {
   margin-top: 50px;
@@ -346,7 +348,7 @@ input[type="submit"]:active {
 
 /* ---------- section-form-------------- */
 .section-form {
-  background-color: rgb(255, 251, 248);
+  background-color: rgb(241, 241, 241);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -374,6 +376,8 @@ input[type="checkbox"] {
 *:focus {
   outline: none;
 }
+
+
 /* *********  HEADER COMPONENTS ******************** */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -419,4 +423,43 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid tomato;
   cursor: pointer;
+}
+ 
+/* *********** FOOTER ************* */
+footer{
+  background-color: rgba(80, 70, 66, 0.726);
+  font-size: 70%;
+}
+footer ul{
+  list-style: none;
+}
+footer ul li{
+  padding: 10px;
+  display: inline-block;
+}
+footer a, 
+footer a:visited{
+  color: rgb(230, 230, 230);
+  border: 0;
+}
+.social ul{
+  margin-left: 50%;
+}
+
+footer a:hover,
+footer a:active{
+  cursor: pointer;
+  border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+.social a{
+  font-size: 200%;
+  border-bottom: transparent;
+  transition: color 300ms;
+}
+.social a:hover,
+.social a:active{
+  font-size: 200%;
+  color: tomato;
+  border-bottom: transparent;
 }
