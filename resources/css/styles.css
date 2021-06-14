@@ -74,6 +74,19 @@ h3 {
   word-spacing: 2px;
   text-transform: uppercase;
 }
+
+a,
+a:visited {
+  color: rgb(255, 94, 0);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgb(255, 94, 0);
+  transition: all 300ms;
+}
+a:hover {
+  color: #2f2f2f;
+  border: transparent;
+}
 /* ---------- PARAGRAPHS ----------- */
 .long-copy {
   line-height: 145%;
@@ -97,7 +110,8 @@ h3 {
 /* ---------- BUTTONS ----------- */
 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type="submit"] {
   display: inline-block;
   font-weight: 300;
   padding: 10px 30px;
@@ -106,7 +120,8 @@ h3 {
   transition: all 300ms;
 }
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type="submit"] {
   background-color: rgb(255, 136, 0);
   color: #fff;
   border: 1px solid rgb(255, 136, 0);
@@ -118,7 +133,9 @@ h3 {
 }
 
 .btn:hover,
-.btn-active {
+.btn-active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: rgb(255, 115, 0);
   border: 1px solid rgb(255, 115, 0);
   color: #fff;
@@ -185,7 +202,7 @@ h3 {
   margin: 52px auto;
 }
 .number {
-  display: inline-block;
+  display: block;
   float: left;
   width: 55px;
   height: 55px;
@@ -201,13 +218,162 @@ h3 {
   line-height: 145%;
   margin-left: 15%;
 }
-
+.app-button {
+  border: 0;
+}
 .app-button img {
   height: 50px;
   width: auto;
   margin-right: 10px;
 }
 
+/* ------------ SECTION CITIES --------------- */
+.section-cities {
+  margin-top: 80px;
+  background-color: rgb(221, 221, 221);
+}
+.section-cities h2 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.city {
+  width: 23%;
+  margin-top: 60px;
+}
+.cities-block {
+  padding-bottom: 60px;
+}
+
+/* links formatted above */
+
+.city img {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* ---------------SECTION - TESTIMONIALS --------------- */
+.section-testimonial {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/back-customers.jpg");
+  background-size: cover;
+  color: whitesmoke;
+  background-attachment: fixed;
+  font-style: italic;
+}
+.section-testimonial h2 {
+  margin-top: 50px;
+  font-style: normal;
+}
+
+.quote {
+  font-size: 90%;
+  width: 70%;
+  text-align: justify;
+  line-height: 140%;
+}
+.quote:before {
+  content: "\201C";
+  font-size: 400%;
+}
+.customer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+.customer img {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  float: left;
+  border-radius: 50%;
+}
+.customer p {
+  font-weight: bold;
+  font-size: 90%;
+  width: 70%;
+}
+
+/* -------------section-plans----------------------- */
+.section-plans {
+  margin-top: 70px;
+  padding-bottom: 70px;
+}
+.section-plans h3 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+.plan-box {
+  border-radius: 8px;
+  background-color: rgb(235, 235, 235);
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 5px 5px 5px rgb(164, 165, 164);
+}
+.plan-box div {
+  border-bottom: rgb(226, 226, 226) 1px solid;
+  padding: 5px;
+}
+.plan-box .price {
+  font-size: 200%;
+  margin-left: 20px;
+  color: rgb(255, 115, 0);
+}
+.plan-box span {
+  font-size: 50%;
+  margin-left: 20px;
+}
+.plan-box p {
+  margin-bottom: 10px;
+}
+.plan-box ul {
+  margin-left: 20px;
+  list-style: none;
+  line-height: 205%;
+}
+.plan-box ul ion-icon {
+  color: rgb(255, 115, 0);
+}
+.plan-box div:last-child {
+  text-align: center;
+  padding: 20px;
+}
+.plan-box div:first-child {
+  background-color: rgb(241, 240, 238);
+}
+
+/* ---------- section-form-------------- */
+.section-form {
+  background-color: rgb(255, 251, 248);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.contact-form {
+  width: 60%;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  border-radius: 6px;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 150px;
+}
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+
+*:focus {
+  outline: none;
+}
 /* *********  HEADER COMPONENTS ******************** */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -215,6 +381,7 @@ header {
   height: 100vh;
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 .title-text-box {
   position: absolute;
